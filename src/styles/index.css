@@ -47,8 +47,8 @@
 }
 /* ASIGNAMOS UN COLO AL BODY */
 body {
-  background-color: #333333;;
-    /* background: var(--Black); */
+  background-color: #333333;
+  /* background: var(--Black); */
 }
 body.Light {
   /* --Black: #ffffff;
@@ -81,3 +81,4 @@ a {
     --General: 8px;
   }
 } */
+}

@@ -4,7 +4,7 @@
 } */
 
 /* CREAMOS NUESTRAS VARIABLES */
-:root {
+/* :root {
   --General: 10px;
   --SuperTitle: 6rem;
   --Title: 4rem;
@@ -28,17 +28,18 @@
     var(--HoverColor1),
     var(--HoverColor2)
   );
-}
+} */
 /* ASIGNAMOS ESTILOS GENERALES */
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* font-family: "LexendDeca", sans-serif; */
+  font-size: 10px;
   font-family: "Times New Roman", Times, serif;
-  font-size: var(--General);
-  color: var(--White);
+  color: #2ae98d;
+  /* font-size: var(--General); */
+  /* color: var(--White); */
 }
 /* OCULTAMOS LA BARRA DE SCROLL */
 ::-webkit-scrollbar {
@@ -46,12 +47,13 @@
 }
 /* ASIGNAMOS UN COLO AL BODY */
 body {
-  background: var(--Black);
+  background-color: #333333;;
+    /* background: var(--Black); */
 }
 body.Light {
-  --Black: #ffffff;
+  /* --Black: #ffffff;
   --White: #000000;
-  --Transparent: #f1f1f1;
+  --Transparent: #f1f1f1; */
 }
 /* ASIGNAMOS PROPIEDADES A TODOS LOS ELEMENTOS a */
 a {
@@ -59,13 +61,13 @@ a {
 }
 /* ASIGNAMOS PROPIEDADES AL CONTENT */
 .Main {
-  width: 160rem;
+  width: 1600px;
   display: flex;
   margin: 0 auto;
 }
 
 @media (width <= 1440px) {
-  .Main {
+  /* .Main {
     width: 100%;
   }
 }
@@ -78,4 +80,4 @@ a {
   :root {
     --General: 8px;
   }
-}
+} */

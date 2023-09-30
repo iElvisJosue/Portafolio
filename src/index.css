@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "LexendDeca";
   src: url("/Files/LexendDeca.ttf") format("truetype");
-}
+} */
 
 /* CREAMOS NUESTRAS VARIABLES */
 :root {
@@ -35,7 +35,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "LexendDeca", sans-serif;
+  /* font-family: "LexendDeca", sans-serif; */
+  font-family: "Times New Roman", Times, serif;
   font-size: var(--General);
   color: var(--White);
 }

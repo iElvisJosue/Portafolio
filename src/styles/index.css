@@ -1,10 +1,10 @@
-/* @font-face {
+@font-face {
   font-family: "LexendDeca";
   src: url("/Files/LexendDeca.ttf") format("truetype");
-} */
+}
 
 /* CREAMOS NUESTRAS VARIABLES */
-/* :root {
+:root {
   --General: 10px;
   --SuperTitle: 6rem;
   --Title: 4rem;
@@ -28,18 +28,15 @@
     var(--HoverColor1),
     var(--HoverColor2)
   );
-} */
+}
 /* ASIGNAMOS ESTILOS GENERALES */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: "LexendDeca", sans-serif; */
-  font-size: 10px;
-  font-family: "Times New Roman", Times, serif;
-  color: #2ae98d;
-  /* font-size: var(--General); */
-  /* color: var(--White); */
+  font-family: "LexendDeca", sans-serif;
+  font-size: var(--General);
+  color: var(--White);
 }
 /* OCULTAMOS LA BARRA DE SCROLL */
 ::-webkit-scrollbar {
@@ -47,13 +44,12 @@
 }
 /* ASIGNAMOS UN COLO AL BODY */
 body {
-  background-color: #333333;
-  /* background: var(--Black); */
+  background: var(--Black);
 }
 body.Light {
-  /* --Black: #ffffff;
+  --Black: #ffffff;
   --White: #000000;
-  --Transparent: #f1f1f1; */
+  --Transparent: #f1f1f1;
 }
 /* ASIGNAMOS PROPIEDADES A TODOS LOS ELEMENTOS a */
 a {
@@ -67,7 +63,7 @@ a {
 }
 
 @media (width <= 1440px) {
-  /* .Main {
+  .Main {
     width: 100%;
   }
 }
@@ -80,5 +76,4 @@ a {
   :root {
     --General: 8px;
   }
-} */
 }

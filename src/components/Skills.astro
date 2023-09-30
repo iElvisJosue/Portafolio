@@ -15,11 +15,11 @@ import "../styles/Skills.css";
           {normal} <b>{bold} </b>
         </p>
         <div class="Main__Right__Skills--List">
-          {skillsDetails[index].map(({ img, name }) => (
+          {skillsDetails[index].map(({ img, name, alt }) => (
             <div class="Main__Right__Skills--List--Details">
               <img
                 src={img}
-                alt="HTML-LOGO"
+                alt={alt}
                 class="Main__Right__Skills--List--Details--Image"
               />
               <p class="Main__Right__Skills--List--Details--Text">{name}</p>

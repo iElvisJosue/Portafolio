@@ -4,6 +4,7 @@
   height: 100vh;
   overflow: auto;
   padding: 1.5rem;
+  background-color: lightblue;
 
   display: flex;
   flex-direction: column;

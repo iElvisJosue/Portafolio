@@ -2,6 +2,7 @@
 import Divisor from "./Divisor.astro";
 
 import { skillsTitle, skillsDetails } from "../const.astro";
+import { Image } from "astro:assets";
 
 import "../styles/Skills.css";
 ---
@@ -17,7 +18,7 @@ import "../styles/Skills.css";
         <div class="Main__Right__Skills--List">
           {skillsDetails[index].map(({ img, name, alt }) => (
             <div class="Main__Right__Skills--List--Details">
-              <img
+              <Image
                 src={img}
                 alt={alt}
                 class="Main__Right__Skills--List--Details--Image"

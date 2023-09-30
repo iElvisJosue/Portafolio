@@ -1,0 +1,240 @@
+---
+export const cardDetails = {
+  name: "Elvis ",
+  rol: "Desarrollador Web",
+  presentation: " en busca de nuevos proyectos para trabajar.",
+  copyright: "© 2023 Elvis Josué.",
+  networks: [
+    {
+      link: "https://wa.me/527441595198",
+      icon: "logo-whatsapp",
+    },
+    {
+      link: "https://www.linkedin.com/in/elvisjosuecr",
+      icon: "logo-linkedin",
+    },
+    {
+      link: "https://www.facebook.com/elvis.josue.754",
+      icon: "logo-facebook",
+    },
+    {
+      link: "https://github.com/iElvisJosue",
+      icon: "logo-github",
+    },
+  ],
+  document: {
+    link: "/public/Files/CV - Elvis Josue Cortez Rivera.pdf",
+    download: "Elvis Josue Cortez Rivera - CV",
+    text: "CURRÍCULUM",
+  },
+};
+
+// PARA AGREGAR UN NUEVO ESTUDIO/EXPERIENCIA SOLO DEBES AGREGAR UN OBJETO
+// DATO IMPORTANTE: "DETAILS" DEBE TENER MINIMO 1 OBJETO
+// DATO: SE MUESTRA DE FORMA ASCENDETE
+export const experiences = [
+  {
+    date: "2023 - Presente",
+    details: [
+      {
+        name: "Desarrollador Web Full Stack",
+        company: "Consultor-ES (En proceso)",
+      },
+      {
+        name: "Desarrollador Frontend",
+        company: "QATZ",
+      },
+      {
+        name: "Desarrollador Frontend",
+        company: "Premier Solutions",
+      },
+    ],
+  },
+  {
+    date: "2021 - 2022",
+    details: [
+      {
+        name: "Desarrollador Web Full Stack",
+        company: "Regiduría",
+      },
+    ],
+  },
+  {
+    date: "2018 - 2019",
+    details: [
+      {
+        name: "Desarrollador Frontend",
+        company: "CEITICOH",
+      },
+      {
+        name: "Maquetador web",
+        company: "CEITICOH",
+      },
+    ],
+  },
+  {
+    date: "2016 - 2021",
+    details: [
+      {
+        name: "Licenciatura en Ciencias y Tecnologías de la Información",
+        company: "UAGro",
+      },
+    ],
+  },
+];
+
+// PARA AGREGAR UNA NUEVA HABILIDAD SOLO DEBES AGREGAR UN OBJETO
+// DATO: SE MUESTRA DE FORMA ASCENDETE
+export const abilities = [
+  {
+    name: "Desarrollo Frontend Responsivo",
+    icon: "phone-portrait",
+    description:
+      "Creo interfaces de usuario altamente responsivas y atractivas utilizando HTML5 y CSS3, priorizando la experiencia del usuario y la adaptación multiplataforma.",
+    amount: "2 PROYECTOS",
+  },
+  {
+    name: "Desarrollo Web Full Stack",
+    icon: "code-working",
+    description:
+      "Desarrollo de aplicaciones web completas, abarcando tanto el frontend como el backend, utilizando tecnologías modernas como React y Express.",
+    amount: "2 PROYECTOS",
+  },
+  {
+    name: "Programación Eficaz y Limpia",
+    icon: "sparkles",
+    description:
+      "Escribo código siguiendo estándares de calidad y legibilidad, asegurando que sea fácil de mantener y entender por otros desarrolladores.",
+    amount: "TODOS LOS PROYECTOS",
+  },
+];
+
+// SKILLSTITTLE Y SKILLSDETAILS VAN DE LA MANO
+// SI QUIERES AGREGAR UNA SECCIÓN PARA "SKILLS"
+// DEBES AGREGAR UN NUEVO TITLE Y DETAILS
+export const skillsTitle = [
+  {
+    normal: "Tecnologías",
+    bold: " Aprendidas",
+  },
+  {
+    normal: "Tecnologías Actualmente",
+    bold: " En Práctica",
+  },
+  {
+    normal: "Tecnologías Con",
+    bold: " Conocimientos Básicos",
+  },
+];
+export const skillsDetails = [
+  [
+    {
+      img: "/public/Skills/HTML.png",
+      name: "HTML",
+    },
+    {
+      img: "/public/Skills/CSS.png",
+      name: "CSS",
+    },
+    {
+      img: "/public/Skills/JS.png",
+      name: "JavaScript",
+    },
+  ],
+  [
+    {
+      img: "/public/Skills/REACT.png",
+      name: "React",
+    },
+    {
+      img: "/public/Skills/NODEJS.png",
+      name: "Node JS",
+    },
+    {
+      img: "/public/Skills/GIT.png",
+      name: "GIT",
+    },
+    {
+      img: "/public/Skills/MONGODB.png",
+      name: "MongoDB",
+    },
+    {
+      img: "/public/Skills/EXPRESS.png",
+      name: "Express JS",
+    },
+    {
+      img: "/public/Skills/ASTRO.png",
+      name: "Astro",
+    },
+  ],
+  [
+    {
+      img: "/public/Skills/PHP.png",
+      name: "PHP",
+    },
+    {
+      img: "/public/Skills/MYSQL.png",
+      name: "MySQL",
+    },
+    {
+      img: "/public/Skills/JAVA.png",
+      name: "Java",
+    },
+  ],
+];
+
+// PARA AGREGAR UN NUEVO PROYECTO SOLO DEBES AGREGAR UN OBJETO CON TODAS ESTAS LISTAS
+// DATO: SE MUESTRA DE FORMA ASCENDETE
+export const projects = [
+  {
+    id: "ConsultorES",
+    alt: "Consultor-ES Preview",
+    title: "Consultor-ES (En proceso)",
+    description:
+      "Aplicación web para Clientes y Consultores, con el objetivo de brindar un servicio de consultor especializado a los clientes. Está efocada en personas mayores a 50 años, las cuales por su edad, tienen pocas oportunidades de trabajo.  (Descripción en proceso).",
+    technologies: "HTML, CSS, MongoDB, Express JS, React y Node JS.",
+    codigo: "https://github.com/iElvisJosue/Consultor-ES",
+    demo: "https://consultor-es.vercel.app/",
+  },
+  {
+    id: "Qatz",
+    alt: "Qatz Preview",
+    title: "QATZ",
+    description:
+      "QATZ es un emocionante juego de preguntas y respuestas diseñado para los amantes de los gatos. A medida que avanzan, los jugadores ponen a prueba su conocimiento sobre el mundo de los gatos, acumulan puntos y se ponen a prueba en niveles más desafiantes.",
+    technologies: "HTML, CSS y React.",
+    codigo: "https://github.com/iElvisJosue/Qatz",
+    demo: "https://qatz.vercel.app/",
+  },
+  {
+    id: "elecShop",
+    alt: "Elec-Shop Preview",
+    title: "Elec-Shop",
+    description:
+      "Ecommerce con un enfoque en la simplicidad y el diseño limpio, esta tienda prioriza la experiencia del usuario, lo que facilita a los clientes encontrar y comprar los productos que necesitan.",
+    technologies: "HTML, CSS y JavaScript.",
+    codigo: "https://github.com/iElvisJosue/Elec-Shop",
+    demo: "https://ielvisjosue.github.io/Elec-Shop",
+  },
+  {
+    id: "regiduria",
+    alt: "Regiduria Preview",
+    title: "Regiduría",
+    description:
+      "Esta aplicación de citas de negocios con operaciones CRUD es valiosa para aumentar la eficiencia y la productividad en un entorno laboral al garantizar una gestión efectiva de las citas y reuniones clave. Además, puede incluye características adicionales, como notificaciones de recordatorio, documentos digitales y fotos.",
+    technologies: "HTML, CSS, JavaScript, PHP y MySQL.",
+    access: "Prueba / Prueba",
+    codigo: "https://github.com/iElvisJosue/Regiduria",
+    demo: "http://regidorgenarotest.atwebpages.com/index.php",
+  },
+  {
+    id: "QTSDM",
+    alt: "QTSDM? Preview",
+    title: "QTSDM?",
+    description:
+      "Mini juego de tipo test que pone a prueba tus conocimientos actuales sobre Minecraft.",
+    technologies: "Java",
+    codigo: "https://github.com/iElvisJosue/JuegoMinecraft",
+  },
+];
+---

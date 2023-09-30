@@ -1,0 +1,43 @@
+---
+import Divisor from "./Divisor.astro";
+
+import "../styles/Contact.css";
+---
+
+<footer class="Main__Right__Contact" id="Contact">
+  <Divisor iconDivisor="mail" TextDivisor="CONTACTO" />
+  <p class="Main__Right__Contact--Title">
+    ¡<b>Trabajemos</b> Juntos!
+  </p>
+  <div class="Main__Right__Contact--Information">
+    <span class="Main__Right__Contact--Information--Section">
+      <ion-icon name="locate"></ion-icon>
+      <span class="Main__Right__Contact--Information--Section--Details">
+        <p class="Main__Right__Contact--Information--Section--Details--Title">
+          Ubicación
+        </p>
+        <a
+          href="https://www.google.com.mx/maps/place/Guerrero/@17.6001409,-101.4151664,8z/data=!3m1!4b1!4m6!3m5!1s0x85cb6558f327203f:0x3137229b4277cb3a!8m2!3d17.4391926!4d-99.5450974!16zL20vMDFidHR0?entry=ttu"
+          target="_blank"
+          class="Main__Right__Contact--Information--Section--Details--Name"
+        >
+          Guerrero, México.
+        </a>
+      </span>
+    </span>
+    <div class="Main__Right__Contact--Information--Section">
+      <ion-icon name="mail"></ion-icon>
+      <div class="Main__Right__Contact--Information--Section--Details">
+        <p class="Main__Right__Contact--Information--Section--Details--Title">
+          Email
+        </p>
+        <a
+          href="mailto:elvisjosue98@hotmail.com"
+          class="Main__Right__Contact--Information--Section--Details--Name"
+        >
+          ElvisJosue98@hotmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

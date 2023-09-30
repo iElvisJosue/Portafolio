@@ -1,0 +1,56 @@
+---
+import Divisor from "./Divisor.astro";
+
+import "/src/styles/Introduction.css";
+---
+
+<div class="Main__Right__Introduction" id="Introduction">
+  <Divisor iconDivisor="home" TextDivisor="INTRODUCCIÓN" />
+  <div class="Main__Right__Introduction--Text">
+    <p class="Main__Right__Introduction--Text--Intro">
+      <b>Elvis Josué Cortez Rivera</b>, apasionado desarrollador web.
+    </p>
+    <p class="Main__Right__Introduction--Text--SubIntro">
+      Realizo sitios web dinámicos, atractivos, con código limpio y optimizado.
+      Además, con mi trabajo busco brindar una experiencia de usuario agradable,
+      fácil y fluida.
+      <br />
+      <br />
+       También me encantan los gatos. <ion-icon name="logo-octocat"
+      ></ion-icon><ion-icon name="heart"></ion-icon>
+    </p>
+  </div>
+  <div class="Main__Right__Introduction--Skip">
+    <span class="Main__Right__Introduction--Skip--Button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <a
+        href="#Projects"
+        class="Main__Right__Introduction--Skip--Button--Background"
+      >
+        <p class="Main__Right__Introduction--Skip--Button--Icon">
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </p>
+        <p class="Main__Right__Introduction--Skip--Button--Text">
+          MIS PROYECTOS
+        </p>
+      </a>
+    </span>
+  </div>
+  <div class="Main__Right__Introduction--Experience">
+    <span class="Main__Right__Introduction--Experience--Time">
+      <p class="Main__Right__Introduction--Experience--Time--Years">1</p>
+      <p class="Main__Right__Introduction--Experience--Time--YearsText">
+        Años de <br /> experiencia
+      </p>
+    </span>
+    <span class="Main__Right__Introduction--Experience--Projects">
+      <p class="Main__Right__Introduction--Experience--Projects--Amount">5</p>
+      <p class="Main__Right__Introduction--Experience--Projects--AmountText">
+        Proyectos realizados <br /> hasta ahora
+      </p>
+    </span>
+  </div>
+</div>

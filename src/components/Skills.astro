@@ -7,7 +7,7 @@ import { Image } from "astro:assets";
 import "../styles/Skills.css";
 ---
 
-<div class="Main__Right__Skills" id="Skills">
+<section class="Main__Right__Skills" id="Skills">
   <Divisor iconDivisor="logo-javascript" TextDivisor="CONOCIMIENTOS" />
   {
     skillsTitle.map(({ normal, bold }, index) => (
@@ -30,4 +30,4 @@ import "../styles/Skills.css";
       </>
     ))
   }
-</div>
+</section>

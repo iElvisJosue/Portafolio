@@ -14,13 +14,11 @@ const classCard = isSecundary
   : "Main__Left__Card";
 ---
 
-<div class={classCard}>
-  <span class="Main__Left__Card--Title">
-    <p class="Main__Left__Card--Name">
-      {name}
-    </p>
+<section class={classCard}>
+  <p class="Main__Left__Card--Title">
+    {name}
     <ion-icon name="logo-octocat"></ion-icon>
-  </span>
+  </p>
   <picture class="Main__Left__Card--Picture">
     <Image src={myImage} alt="Foto de perfil" />
   </picture>
@@ -43,4 +41,4 @@ const classCard = isSecundary
     <ion-icon name="cloud-download"></ion-icon>
     {text}
   </a>
-</div>
+</section>

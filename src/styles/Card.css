@@ -16,8 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.Main__Left__Card--Name {
   font-size: var(--SubTitle);
 }
 .Main__Left__Card--Title ion-icon {

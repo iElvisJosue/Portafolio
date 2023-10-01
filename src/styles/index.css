@@ -57,7 +57,8 @@ a {
 }
 /* ASIGNAMOS PROPIEDADES AL CONTENT */
 .Main {
-  width: 1600px;
+  position: relative;
+  width: 160rem;
   display: flex;
   margin: 0 auto;
 }

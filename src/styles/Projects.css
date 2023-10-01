@@ -30,7 +30,7 @@
 .Main__Right__Projects--Details--Picture {
   position: relative;
 }
-.Main__Right__Projects--Details--Picture--Prev,
+/* .Main__Right__Projects--Details--Picture--Prev,
 .Main__Right__Projects--Details--Picture--Next {
   position: absolute;
   width: 5rem;
@@ -60,9 +60,10 @@
 .Main__Right__Projects--Details--Picture--Prev:hover,
 .Main__Right__Projects--Details--Picture--Next:hover {
   background-position: 0 0;
-}
+} */
 .Main__Right__Projects--Details--Picture--Image {
   width: 100%;
+  height: auto;
 }
 .Main__Right__Projects--Details--Description {
   background-color: var(--Transparent);
@@ -107,11 +108,4 @@
 }
 .Main__Right__Projects--Details--Description--Links--Buttons:hover {
   background-position: 0 0;
-}
-@media (width <= 600px) {
-  .Main__Right__Projects--Details--Picture--Prev,
-  .Main__Right__Projects--Details--Picture--Next {
-    width: 40px;
-    height: 40px;
-  }
 }

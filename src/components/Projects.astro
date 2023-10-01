@@ -1,6 +1,8 @@
 ---
 import Divisor from "./Divisor.astro";
 
+import { Image } from "astro:assets";
+
 import { projects } from "../const.astro";
 
 import "../styles/Projects.css";
@@ -13,19 +15,24 @@ import "../styles/Projects.css";
   </p>
   {
     projects.map(
-      ({ id, alt, title, description, technologies, access, codigo, demo }) => (
+      ({
+        id,
+        img,
+        alt,
+        title,
+        description,
+        technologies,
+        access,
+        codigo,
+        demo,
+      }) => (
         <div class="Main__Right__Projects--Details" id={id}>
           <div class="Main__Right__Projects--Details--Picture">
-            <button class="Main__Right__Projects--Details--Picture--Prev">
-              <ion-icon name="chevron-back" />
-            </button>
-            <img
+            <Image
+              src={img}
               class="Main__Right__Projects--Details--Picture--Image"
               alt={alt}
             />
-            <button class="Main__Right__Projects--Details--Picture--Next">
-              <ion-icon name="chevron-forward" />
-            </button>
           </div>
           <div class="Main__Right__Projects--Details--Description">
             <p class="Main__Right__Projects--Details--Description--Title">
@@ -67,7 +74,13 @@ import "../styles/Projects.css";
   }
 </div>
 
-<script>
+<!-- <script>
+  <button class="Main__Right__Projects--Details--Picture--Prev">
+    <ion-icon name="chevron-back" />
+  </button>
+  <button class="Main__Right__Projects--Details--Picture--Next">
+    <ion-icon name="chevron-forward" />
+  </button>
   let position = [0, 0, 0, 0, 0];
   export const projectsImages = {
     ConsultorES: {
@@ -160,4 +173,4 @@ import "../styles/Projects.css";
       currentImage[index].src = seeImage[position[index]];
     });
   });
-</script>
+</script> -->

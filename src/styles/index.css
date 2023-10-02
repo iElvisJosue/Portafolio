@@ -13,18 +13,18 @@
   --Icons: 2rem;
   --MiniText: 1.5rem;
   --MainColor: #2ae98d;
-  --SecundaryColor: #009efd;
+  --SecondaryColor: #009efd;
   --HoverColor1: #6f86d6;
   --HoverColor2: #48c6ef;
   --Black: #1f1f1f;
   --Gray: #979797;
   --Transparent: #333333;
   --White: #ffffff;
-  --Gradient: linear-gradient(45deg, var(--MainColor), var(--SecundaryColor));
+  --Gradient: linear-gradient(45deg, var(--MainColor), var(--SecondaryColor));
   --GradientHover: linear-gradient(
     45deg,
     var(--MainColor),
-    var(--SecundaryColor),
+    var(--SecondaryColor),
     var(--HoverColor1),
     var(--HoverColor2)
   );

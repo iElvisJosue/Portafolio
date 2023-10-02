@@ -7,10 +7,10 @@ import { cardDetails } from "../const.astro";
 const { name, rol, presentation, copyright, networks, document } = cardDetails;
 const { link, download, text } = document;
 
-const { isSecundary } = Astro.props;
+const { isSecondary } = Astro.props;
 
-const classCard = isSecundary
-  ? "Main__Left__Card Secundary"
+const classCard = isSecondary
+  ? "Main__Left__Card Secondary"
   : "Main__Left__Card";
 ---
 

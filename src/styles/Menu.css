@@ -15,6 +15,9 @@
 
   transition: 0.5s ease-in-out all;
 }
+.Main__Menu a {
+  cursor: pointer;
+}
 .Main__Menu.Show {
   height: 40rem;
   top: calc(50% - 20rem);

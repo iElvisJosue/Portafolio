@@ -1,46 +1,72 @@
 ---
 import "../styles/Menu.css";
+
+const menuSections = [
+  {
+    url: "#",
+    id: "showMenuSections",
+    nameIcon: "grid",
+    idIcon: "iconMenuSections",
+  },
+  {
+    url: "#Introduction",
+    nameIcon: "Home",
+  },
+  {
+    url: "#About",
+    nameIcon: "Person",
+  },
+  {
+    url: "#Experience",
+    nameIcon: "School",
+  },
+  {
+    url: "#Projects",
+    nameIcon: "briefcase",
+  },
+  {
+    url: "#Abilities",
+    nameIcon: "hammer",
+  },
+  {
+    url: "#Skills",
+    nameIcon: "logo-javascript",
+  },
+  {
+    url: "#Contact",
+    nameIcon: "mail",
+  },
+];
 ---
 
 <nav class="Main__Menu">
-  <a href="#" class="Main__Menu--Options" id="showMenu">
-    <ion-icon name="grid" id="iconMenu"></ion-icon>
-  </a>
-  <a href="#Introduction" class="Main__Menu--Options">
-    <ion-icon name="Home"></ion-icon>
-  </a>
-  <a href="#About" class="Main__Menu--Options">
-    <ion-icon name="Person"></ion-icon>
-  </a>
-  <a href="#Experience" class="Main__Menu--Options">
-    <ion-icon name="School"></ion-icon>
-  </a>
-  <a href="#Projects" class="Main__Menu--Options">
-    <ion-icon name="briefcase"></ion-icon>
-  </a>
-  <a href="#Abilities" class="Main__Menu--Options">
-    <ion-icon name="hammer"></ion-icon>
-  </a>
-  <a href="#Skills" class="Main__Menu--Options">
-    <ion-icon name="logo-javascript"></ion-icon>
-  </a>
-  <a href="#Contact" class="Main__Menu--Options">
-    <ion-icon name="mail"></ion-icon>
-  </a>
+  {
+    menuSections.map(({ url, id, nameIcon, idIcon }, index) =>
+      index === 0 ? (
+        <a class="Main__Menu--Options" id={id}>
+          <ion-icon name={nameIcon} id={idIcon} />
+        </a>
+      ) : (
+        <a href={url} class="Main__Menu--Options">
+          <ion-icon name={nameIcon} />
+        </a>
+      )
+    )
+  }
 </nav>
 
 <script>
   let i = 0;
   const menu = document.querySelector(".Main__Menu");
-  const showMenuButton = document.querySelector("#showMenu");
-  const iconShowMenu = document.querySelector("#iconMenu");
-  showMenuButton?.addEventListener("click", () => {
+  const showMenuSectionsButton = document.querySelector("#showMenuSections");
+  const iconShowMenuSections = document.querySelector("#iconMenuSections");
+  showMenuSectionsButton?.addEventListener("click", () => {
     menu?.classList.toggle("Show");
     if (i === 0) {
-      iconShowMenu?.setAttribute("name", "close-circle");
+      iconShowMenuSections?.setAttribute("name", "close-circle");
       i++;
     } else {
-      iconShowMenu?.setAttribute("name", "grid");
+      iconShowMenuSections?.setAttribute("name", "grid");
       i--;
     }
   });

@@ -50,20 +50,22 @@ import "../styles/Projects.css";
               </p>
             )}
             <span class="Main__Right__Projects--Details--Description--Links">
-              <a
-                href={codigo}
-                class="Main__Right__Projects--Details--Description--Links--Buttons"
-                target="_blank"
-              >
-                Código <ion-icon name="logo-github" />
-              </a>
+              {codigo && (
+                <a
+                  href={codigo}
+                  class="Main__Right__Projects--Details--Description--Links--Buttons"
+                  target="_blank"
+                >
+                  Código <ion-icon name="logo-github" />
+                </a>
+              )}
               {demo && (
                 <a
                   href={demo}
                   class="Main__Right__Projects--Details--Description--Links--Buttons"
                   target="_blank"
                 >
-                  Demo <ion-icon name="eye" />
+                  Web <ion-icon name="globe-outline" />
                 </a>
               )}
             </span>

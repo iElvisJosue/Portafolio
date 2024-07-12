@@ -1,5 +1,6 @@
 ---
 import Divisor from "./Divisor.astro";
+import { projects } from "../const.astro";
 
 import "/src/styles/Introduction.css";
 ---
@@ -18,7 +19,7 @@ import "/src/styles/Introduction.css";
       fluida en cada sitio que desarrollo.
       <br />
       <br />
-       Además de mi gusto por el desarrollo web, también me gustan los gatos. <ion-icon
+      Además de mi gusto por el desarrollo web, también me gustan los gatos. <ion-icon
         name="logo-octocat"></ion-icon><ion-icon name="heart"></ion-icon>
     </p>
   </div>
@@ -49,7 +50,9 @@ import "/src/styles/Introduction.css";
       </p>
     </span>
     <span class="Main__Right__Introduction--Experience--Projects">
-      <p class="Main__Right__Introduction--Experience--Projects--Amount">5</p>
+      <p class="Main__Right__Introduction--Experience--Projects--Amount">
+        {projects.length}
+      </p>
       <p class="Main__Right__Introduction--Experience--Projects--AmountText">
         Proyectos realizados <br /> hasta ahora
       </p>

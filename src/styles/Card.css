@@ -35,6 +35,8 @@
 .Main__Left__Card--Picture img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
   border-radius: 3rem;
   filter: grayscale(1);
 }

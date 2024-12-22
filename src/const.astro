@@ -12,7 +12,10 @@ import PHP from "/public/Skills/PHP.png";
 import MYSQL from "/public/Skills/MYSQL.png";
 import JAVA from "/public/Skills/JAVA.png";
 
-import CONSULTORES from "/public/Projects/Consultores/1.png";
+// import CONSULTORES from "/public/Projects/Consultores/1.png";
+import USMXAPP from "/public/Projects/USMX/USMX-App.png";
+import USMXWEBSITE from "/public/Projects/USMX/USMX-Website.png";
+import INFRACCIONESGOB from "/public/Projects/Infracciones/InfraccionesGOB.png";
 import ELECSHOP from "/public/Projects/ElecShop/1.png";
 import QATZ from "/public/Projects/Qatz/1.png";
 import REGIDURIA from "/public/Projects/Regiduria/1.png";
@@ -25,7 +28,7 @@ export const cardDetails = {
   name: "Elvis ",
   rol: "Desarrollador Web",
   presentation: " en busca de nuevos proyectos para trabajar.",
-  copyright: "© 2023 Elvis Josué.",
+  copyright: "© 2024 Elvis Josué.",
   networks: [
     {
       link: "https://wa.me/527441595198",
@@ -56,19 +59,36 @@ export const cardDetails = {
 // DATO: SE MUESTRA DE FORMA ASCENDETE
 export const experiences = [
   {
-    date: "2023 - Presente",
+    date: "2024",
     details: [
       {
-        name: "Desarrollador Web Full Stack",
-        company: "Consultor-ES (En proceso)",
+        name: "Frontend/Backend",
+        company: "USMX (En proceso)",
       },
       {
-        name: "Desarrollador Frontend",
+        name: "Maquetador web",
+        company: "USMX Website",
+      },
+      {
+        name: "Frontend/Backend",
+        company: "Infracciones GOB (Pendiente)",
+      },
+      {
+        name: "Frontend/Backend",
+        company: "Beauty Room",
+      },
+    ],
+  },
+  {
+    date: "2023",
+    details: [
+      // {
+      //   name: "Frontend/Backend",
+      //   company: "Consultor-ES (Cancelado)",
+      // },
+      {
+        name: "Frontend",
         company: "QATZ",
-      },
-      {
-        name: "Desarrollador Frontend",
-        company: "Premier Solutions",
       },
     ],
   },
@@ -76,7 +96,7 @@ export const experiences = [
     date: "2021 - 2022",
     details: [
       {
-        name: "Desarrollador Web Full Stack",
+        name: "Frontend/Backend",
         company: "Regiduría",
       },
     ],
@@ -85,12 +105,12 @@ export const experiences = [
     date: "2018 - 2019",
     details: [
       {
-        name: "Desarrollador Frontend",
+        name: "Frontend",
         company: "CEITICOH",
       },
       {
         name: "Maquetador web",
-        company: "CEITICOH",
+        company: "CEITICOH Website",
       },
     ],
   },
@@ -137,15 +157,11 @@ export const abilities = [
 export const skillsTitle = [
   {
     normal: "Tecnologías",
-    bold: " Aprendidas",
-  },
-  {
-    normal: "Tecnologías Actualmente",
-    bold: " En Práctica",
+    bold: " Más Usadas",
   },
   {
     normal: "Tecnologías Con",
-    bold: " Conocimientos Básicos",
+    bold: " Conocimientos Muy Básicos",
   },
 ];
 export const skillsDetails = [
@@ -165,8 +181,6 @@ export const skillsDetails = [
       name: "JavaScript",
       alt: "JS-LOGO",
     },
-  ],
-  [
     {
       img: REACT,
       name: "React",
@@ -178,6 +192,18 @@ export const skillsDetails = [
       alt: "NODEJS-LOGO",
     },
     {
+      img: EXPRESS,
+      name: "Express JS",
+      alt: "EXPRESS-LOGO",
+    },
+    {
+      img: MYSQL,
+      name: "MySQL",
+      alt: "MYSQL-LOGO",
+    },
+  ],
+  [
+    {
       img: GIT,
       name: "GIT",
       alt: "GIT-LOGO",
@@ -188,26 +214,14 @@ export const skillsDetails = [
       alt: "MONGODB-LOGO",
     },
     {
-      img: EXPRESS,
-      name: "Express JS",
-      alt: "EXPRESS-LOGO",
-    },
-    {
       img: ASTRO,
       name: "Astro",
       alt: "ASTRO-LOGO",
     },
-  ],
-  [
     {
       img: PHP,
       name: "PHP",
       alt: "PHP-LOGO",
-    },
-    {
-      img: MYSQL,
-      name: "MySQL",
-      alt: "MYSQL-LOGO",
     },
     {
       img: JAVA,
@@ -221,26 +235,56 @@ export const skillsDetails = [
 // DATO: SE MUESTRA DE FORMA ASCENDETE
 export const projects = [
   {
+    id: "USMX",
+    img: USMXAPP,
+    alt: "USMX App Preview",
+    title: "USMX Aplicación",
+    description:
+      "Sistema web para la empresa USMX, la cual permite llevar un control total de los procesos de la misma (Pedidos, Usuarios, Productos, Etc.).",
+    technologies: "HTML, CSS, JS, React, Node y MySQL.",
+    demo: "https://www.usmxxpress.net/",
+  },
+  {
+    id: "USMX Website",
+    img: USMXWEBSITE,
+    alt: "USMX Website Preview",
+    title: "USMX Website",
+    description:
+      "Pagina web para la empresa USMX, con el objetivo de brindar información sobre la empresa y sus servicios. Permite el contacto directo con la empresa mediante correo y/o el rastreo de un paquete.",
+    technologies: "HTML, CSS, JS, Node y MySQL.",
+    demo: "https://usmxxpress.com/",
+  },
+  {
+    id: "Infracciones GOB",
+    img: INFRACCIONESGOB,
+    alt: "Infracciones GOB Preview",
+    title: "Infracciones GOB",
+    description:
+      "Sistema web para el gobierno de Guerrero, la cual permite llevar un control de las infracciones registradas en el estado.",
+    technologies: "HTML, CSS, JS, React, Node y MySQL.",
+    demo: "https://infracciones.vercel.app/",
+  },
+  {
     id: "beautyroom",
     img: BEAUTYROOM,
     alt: "BeautyRoom Preview",
     title: "BeautyRoom",
     description:
-      "Una aplicación web para centros estéticos que permite agendar y gestionar citas, realizar ventas, administrar usuarios e inventarios, generar reportes de ventas y mantener una lista de clientes.",
-    technologies: "HTML, CSS, React, Node y MySQL.",
+      "Una aplicación web para centros estéticos que permite agendar y gestionar citas, realizar ventas, administrar usuarios e inventarios, generar reportes de ventas (PDF's) y mantener una lista de clientes.",
+    technologies: "HTML, CSS, JS, React, Node y MySQL.",
     demo: "https://www.embeautyroom.site/",
   },
-  {
-    id: "ConsultorES",
-    img: CONSULTORES,
-    alt: "Consultor-ES Preview",
-    title: "Consultor-ES",
-    description:
-      "Aplicación web para Clientes y Consultores, con el objetivo de brindar un servicio de consultor especializado a los clientes. Está efocada en personas mayores a 50 años, las cuales por su edad, tienen pocas oportunidades de trabajo.",
-    technologies: "HTML, CSS, MongoDB, Express JS, React y Node JS.",
-    codigo: "https://github.com/iElvisJosue/Consultor-ES",
-    demo: "https://consultor-es.vercel.app/",
-  },
+  // {
+  //   id: "ConsultorES",
+  //   img: CONSULTORES,
+  //   alt: "Consultor-ES Preview",
+  //   title: "Consultor-ES",
+  //   description:
+  //     "Aplicación web para Clientes y Consultores, con el objetivo de brindar un servicio de consultor especializado a los clientes. Está efocada en personas mayores a 50 años, las cuales por su edad, tienen pocas oportunidades de trabajo.",
+  //   technologies: "HTML, CSS, MongoDB, Express JS, React y Node JS.",
+  //   codigo: "https://github.com/iElvisJosue/Consultor-ES",
+  //   demo: "https://consultor-es.vercel.app/",
+  // },
   {
     id: "Qatz",
     img: QATZ,
@@ -248,7 +292,7 @@ export const projects = [
     title: "QATZ",
     description:
       "QATZ es un emocionante juego de preguntas y respuestas diseñado para los amantes de los gatos. A medida que avanzan, los jugadores ponen a prueba su conocimiento sobre el mundo de los gatos, acumulan puntos y se ponen a prueba en niveles más desafiantes.",
-    technologies: "HTML, CSS y React.",
+    technologies: "HTML, CSS, JS y React.",
     codigo: "https://github.com/iElvisJosue/Qatz",
     demo: "https://qatz.vercel.app/",
   },
@@ -259,7 +303,7 @@ export const projects = [
     title: "Elec-Shop",
     description:
       "Ecommerce con un enfoque en la simplicidad y el diseño limpio, esta tienda prioriza la experiencia del usuario, lo que facilita a los clientes encontrar y comprar los productos que necesitan.",
-    technologies: "HTML, CSS y JavaScript.",
+    technologies: "HTML, CSS y JS.",
     codigo: "https://github.com/iElvisJosue/Elec-Shop",
     demo: "https://ielvisjosue.github.io/Elec-Shop",
   },
@@ -270,10 +314,9 @@ export const projects = [
     title: "Regiduría",
     description:
       "Esta aplicación de citas de negocios con operaciones CRUD es valiosa para aumentar la eficiencia y la productividad en un entorno laboral al garantizar una gestión efectiva de las citas y reuniones clave. Además, puede incluye características adicionales, como notificaciones de recordatorio, documentos digitales y fotos.",
-    technologies: "HTML, CSS, JavaScript, PHP y MySQL.",
+    technologies: "HTML, CSS, JS, PHP y MySQL.",
     access: "Prueba / Prueba",
     codigo: "https://github.com/iElvisJosue/Regiduria",
-    demo: "http://regidorgenarotest.atwebpages.com/index.php",
   },
   {
     id: "QTSDM",

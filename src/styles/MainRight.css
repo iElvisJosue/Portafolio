@@ -1,0 +1,16 @@
+.Main__Right {
+  scroll-behavior: smooth;
+  width: 100rem;
+  height: 100vh;
+  overflow: auto;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+@media (width <= 1440px) {
+  .Main__Right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+---
+import Divisor from "./Divisor.astro";
+import { projects } from "../const.astro";
+
+import "/src/styles/Introduction.css";
+---
+
+<section class="Main__Right__Introduction" id="Introduction">
+  <Divisor iconDivisor="home" TextDivisor="INTRODUCCIÓN" />
+  <div class="Main__Right__Introduction--Text">
+    <p class="Main__Right__Introduction--Text--Intro">
+      <b>Elvis Josué Cortez Rivera</b>, apasionado desarrollador web.
+    </p>
+    <p class="Main__Right__Introduction--Text--SubIntro">
+      Tengo una sólida experiencia en la creación de sitios web dinámicos y
+      atractivos. Mi enfoque se centra en garantizar que cada proyecto cuente
+      con un código limpio y altamente optimizado. Mi objetivo principal es
+      proporcionar a los usuarios una experiencia de usuario agradable, fácil y
+      fluida en cada sitio que desarrollo.
+      <br />
+      <br />
+      Además de mi gusto por el desarrollo web, también me gustan los gatos. <ion-icon
+        name="logo-octocat"></ion-icon><ion-icon name="heart"></ion-icon>
+    </p>
+  </div>
+  <div class="Main__Right__Introduction--Skip">
+    <span class="Main__Right__Introduction--Skip--Button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <a
+        href="#Projects"
+        class="Main__Right__Introduction--Skip--Button--Background"
+      >
+        <p class="Main__Right__Introduction--Skip--Button--Icon">
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </p>
+        <p class="Main__Right__Introduction--Skip--Button--Text">
+          MIS PROYECTOS
+        </p>
+      </a>
+    </span>
+  </div>
+  <div class="Main__Right__Introduction--Experience">
+    <span class="Main__Right__Introduction--Experience--Time">
+      <p class="Main__Right__Introduction--Experience--Time--Years">2</p>
+      <p class="Main__Right__Introduction--Experience--Time--YearsText">
+        Años de <br /> experiencia
+      </p>
+    </span>
+    <span class="Main__Right__Introduction--Experience--Projects">
+      <p class="Main__Right__Introduction--Experience--Projects--Amount">
+        {projects.length}
+      </p>
+      <p class="Main__Right__Introduction--Experience--Projects--AmountText">
+        Proyectos realizados <br /> hasta ahora
+      </p>
+    </span>
+  </div>
+</section>

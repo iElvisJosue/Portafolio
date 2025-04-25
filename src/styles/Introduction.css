@@ -1,0 +1,162 @@
+.Main__Right__Introduction {
+  height: auto;
+  background: var(--Black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.Main__Right__Introduction--Text {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.Main__Right__Introduction--Text--Intro {
+  font-size: var(--SuperTitle);
+}
+.Main__Right__Introduction--Text--Intro b {
+  color: var(--MainColor);
+  font-size: var(--SuperTitle);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Right__Introduction--Text--SubIntro {
+  font-size: var(--Text);
+  color: var(--Gray);
+}
+.Main__Right__Introduction--Text--SubIntro ion-icon {
+  font-size: var(--Icons);
+  color: var(--MainColor);
+}
+.Main__Right__Introduction--Skip {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main__Right__Introduction--Skip--Button {
+  width: 300px;
+  height: 75px;
+  overflow: hidden;
+  position: relative;
+}
+.Main__Right__Introduction--Skip--Button span {
+  position: absolute;
+  background: var(--White);
+}
+.Main__Right__Introduction--Skip--Button span:nth-child(1) {
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: -100%;
+  animation: Top 2s infinite;
+}
+.Main__Right__Introduction--Skip--Button span:nth-child(2) {
+  width: 2px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+  animation: Right 2s infinite;
+}
+.Main__Right__Introduction--Skip--Button span:nth-child(3) {
+  width: 100%;
+  height: 2px;
+  right: -100%;
+  bottom: 0;
+  animation: Bottom 2s infinite;
+}
+.Main__Right__Introduction--Skip--Button span:nth-child(4) {
+  width: 2px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  animation: Left 2s infinite;
+}
+.Main__Right__Introduction--Skip--Button--Background {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.5s ease-in-out all;
+}
+.Main__Right__Introduction--Skip--Button--Icon,
+.Main__Right__Introduction--Skip--Button--Text {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--Text);
+}
+.Main__Right__Introduction--Skip--Button--Icon ion-icon {
+  font-size: var(--SubTitle);
+}
+.Main__Right__Introduction--Skip--Button:hover
+  .Main__Right__Introduction--Skip--Button--Background {
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.Main__Right__Introduction--Skip--Button:hover
+  .Main__Right__Introduction--Skip--Button--Icon
+  ion-icon,
+.Main__Right__Introduction--Skip--Button:hover
+  .Main__Right__Introduction--Skip--Button--Text {
+  color: var(--MainColor);
+}
+.Main__Right__Introduction--Skip--Button:hover span {
+  background: var(--MainColor);
+}
+.Main__Right__Introduction--Experience {
+  display: flex;
+  gap: 50px;
+  padding: 2.5rem 0;
+}
+.Main__Right__Introduction--Experience--Time--Years,
+.Main__Right__Introduction--Experience--Projects--Amount {
+  text-align: center;
+  font-size: var(--SuperTitle);
+  color: var(--MainColor);
+}
+.Main__Right__Introduction--Experience--Time--YearsText,
+.Main__Right__Introduction--Experience--Projects--AmountText {
+  text-align: center;
+  color: var(--Gray);
+  font-size: var(--MiniText);
+  text-transform: uppercase;
+}
+/* ANIMACIONES */
+
+@keyframes Top {
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes Right {
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes Bottom {
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes Left {
+  100% {
+    bottom: 100%;
+  }
+}

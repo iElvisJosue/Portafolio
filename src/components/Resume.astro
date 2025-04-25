@@ -1,0 +1,34 @@
+---
+import Divisor from "./Divisor.astro";
+
+import { experiences } from "../const.astro";
+
+import "../styles/Resume.css";
+---
+
+<section class="Main__Right__Experience" id="Experience">
+  <Divisor iconDivisor="school" TextDivisor="RESUMEN" />
+  <p class="Main__Right__Experience--Title">
+    Educación & <b>Experiencia</b>
+  </p>
+  <div class="Main__Right__Experience--Details">
+    {
+      experiences.map(({ date, details }) => (
+        <div class="Main__Right__Experience--Details--Content">
+          <span />
+          <p class="Main__Right__Experience--Details--Content--Date">{date}</p>
+          {details.map(({ name, company }) => (
+            <>
+              <p class="Main__Right__Experience--Details--Content--Name">
+                {name}
+              </p>
+              <p class="Main__Right__Experience--Details--Content--Company">
+                {company}
+              </p>
+            </>
+          ))}
+        </div>
+      ))
+    }
+  </div>
+</section>

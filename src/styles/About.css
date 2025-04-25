@@ -1,0 +1,43 @@
+.Main__Right__About {
+  margin: auto;
+  background: var(--Black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.Main__Right__About--Text {
+  font-size: var(--Title);
+}
+.Main__Right__About--Text b {
+  color: var(--MainColor);
+  font-size: var(--Title);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Right__About--SubText {
+  font-size: var(--Text);
+  color: var(--Gray);
+}
+.Main__Right__About--SubText b {
+  color: var(--MainColor);
+  font-size: var(--Text);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

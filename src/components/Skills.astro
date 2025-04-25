@@ -1,0 +1,33 @@
+---
+import Divisor from "./Divisor.astro";
+
+import { skillsTitle, skillsDetails } from "../const.astro";
+import { Image } from "astro:assets";
+
+import "../styles/Skills.css";
+---
+
+<section class="Main__Right__Skills" id="Skills">
+  <Divisor iconDivisor="logo-javascript" TextDivisor="CONOCIMIENTOS" />
+  {
+    skillsTitle.map(({ normal, bold }, index) => (
+      <>
+        <p class="Main__Right__Skills--Title">
+          {normal} <b>{bold} </b>
+        </p>
+        <div class="Main__Right__Skills--List">
+          {skillsDetails[index].map(({ img, name, alt }) => (
+            <div class="Main__Right__Skills--List--Details">
+              <Image
+                src={img}
+                alt={alt}
+                class="Main__Right__Skills--List--Details--Image"
+              />
+              <p class="Main__Right__Skills--List--Details--Text">{name}</p>
+            </div>
+          ))}
+        </div>
+      </>
+    ))
+  }
+</section>

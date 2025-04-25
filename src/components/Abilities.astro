@@ -1,0 +1,28 @@
+---
+import Divisor from "./Divisor.astro";
+
+import { abilities } from "../const.astro";
+
+import "../styles/Abilities.css";
+---
+
+<section class="Main__Right__Abilities" id="Abilities">
+  <Divisor iconDivisor="hammer" TextDivisor="DESTREZAS" />
+  <p class="Main__Right__Abilities--Title">
+    <b>Competencias</b> En Desarrollo Web
+  </p>
+  {
+    abilities.map(({ name, icon, description, amount }) => (
+      <div class="Main__Right__Abilities--Details">
+        <p class="Main__Right__Abilities--Details--Name">
+          {name}
+          <ion-icon name={icon} />
+        </p>
+        <p class="Main__Right__Abilities--Details--Description">
+          {description}
+        </p>
+        <p class="Main__Right__Abilities--Details--Amount">{amount}</p>
+      </div>
+    ))
+  }
+</section>

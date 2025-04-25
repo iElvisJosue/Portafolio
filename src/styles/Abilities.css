@@ -1,0 +1,55 @@
+.Main__Right__Abilities {
+  height: auto;
+  background: var(--Black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.Main__Right__Abilities--Title {
+  font-size: var(--Title);
+}
+.Main__Right__Abilities--Title b {
+  color: var(--MainColor);
+  font-size: var(--Title);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Right__Abilities--Details {
+  padding: 3rem;
+  border: 1px solid var(--Transparent);
+  border-radius: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+.Main__Right__Abilities--Details--Name {
+  font-size: var(--SubTitle);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.Main__Right__Abilities--Details--Name ion-icon {
+  font-size: var(--SubTitle);
+  color: var(--MainColor);
+}
+.Main__Right__Abilities--Details--Description {
+  font-size: var(--MiniText);
+  color: var(--Gray);
+}
+.Main__Right__Abilities--Details--Amount {
+  font-size: var(--MiniText);
+  color: var(--White);
+}

@@ -1,0 +1,44 @@
+---
+import "/src/styles/Card.css";
+import { Image } from "astro:assets";
+import { cardDetails } from "../const.astro";
+import myImage from "/public/FotoPerfil.png";
+
+const { name, rol, presentation, copyright, networks, document } = cardDetails;
+const { link, download, text } = document;
+
+const { isSecondary } = Astro.props;
+
+const classCard = isSecondary
+  ? "Main__Left__Card Secondary"
+  : "Main__Left__Card";
+---
+
+<section class={classCard}>
+  <p class="Main__Left__Card--Title">
+    {name}
+    <ion-icon name="logo-octocat"></ion-icon>
+  </p>
+  <picture class="Main__Left__Card--Picture">
+    <Image src={myImage} alt="Foto de perfil" />
+  </picture>
+  <p class="Main__Left__Card--Text">
+    <b>{rol}</b>{presentation}
+  </p>
+  <small class="Main__Left__Card--Copyright">{copyright}</small>
+  <ul class="Main__Left__Card--Networks">
+    {
+      networks.map(({ link, icon }) => (
+        <li class="Main__Left__Card--Networks--List">
+          <a href={link} target="_blank">
+            <ion-icon name={icon} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <a class="Main__Left__Card--Button" href={link} download={download}>
+    <ion-icon name="cloud-download"></ion-icon>
+    {text}
+  </a>
+</section>

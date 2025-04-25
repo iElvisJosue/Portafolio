@@ -1,0 +1,75 @@
+.Main__Right__Skills {
+  height: auto;
+  background: var(--Black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.Main__Right__Skills--Title {
+  font-size: var(--Title);
+}
+.Main__Right__Skills--Title b {
+  color: var(--MainColor);
+  font-size: var(--Title);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Right__Skills--List {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.Main__Right__Skills--List--Details {
+  grid-column: span 1;
+  height: 25rem;
+  border: 1px solid var(--Transparent);
+  border-radius: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  transition: 0.5s ease-in-out all;
+}
+.Main__Right__Skills--List--Details:hover {
+  border: 1px solid var(--MainColor);
+}
+.Main__Right__Skills--List--Details--Image {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+.Main__Right__Skills--List--Details--Text {
+  font-size: var(--Text);
+}
+
+@media (width <= 768px) {
+  .Main__Right__Skills--List {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width <= 500px) {
+  .Main__Right__Skills--List--Details {
+    height: auto;
+    padding: 20px;
+  }
+  .Main__Right__Skills--List--Details--Image {
+    width: 85px;
+    height: 85px;
+  }
+}
+@media (width <= 300px) {
+  .Main__Right__Skills--List {
+    grid-template-columns: 1fr;
+  }
+}

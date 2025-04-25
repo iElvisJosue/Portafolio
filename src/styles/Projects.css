@@ -1,0 +1,111 @@
+.Main__Right__Projects {
+  height: auto;
+  background: var(--Black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.Main__Right__Projects--Title {
+  font-size: var(--Title);
+}
+.Main__Right__Projects--Title b {
+  color: var(--MainColor);
+  font-size: var(--Title);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Right__Projects--Details {
+  background-color: var(--Transparent);
+  text-align: center;
+}
+.Main__Right__Projects--Details--Picture {
+  position: relative;
+}
+/* .Main__Right__Projects--Details--Picture--Prev,
+.Main__Right__Projects--Details--Picture--Next {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: calc(50% - 2.5rem);
+  border: none;
+  background: var(--GradientHover);
+  background-size: auto 1000%;
+  background-position: 0 100%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out all;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main__Right__Projects--Details--Picture--Prev {
+  left: 0;
+}
+.Main__Right__Projects--Details--Picture--Next {
+  right: 0;
+}
+.Main__Right__Projects--Details--Picture--Prev ion-icon,
+.Main__Right__Projects--Details--Picture--Next ion-icon {
+  font-size: var(--Icons);
+}
+.Main__Right__Projects--Details--Picture--Prev:hover,
+.Main__Right__Projects--Details--Picture--Next:hover {
+  background-position: 0 0;
+} */
+.Main__Right__Projects--Details--Picture--Image {
+  width: 100%;
+  height: auto;
+}
+.Main__Right__Projects--Details--Description {
+  background-color: var(--Transparent);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.Main__Right__Projects--Details--Description--Title {
+  font-size: var(--SubTitle);
+}
+.Main__Right__Projects--Details--Description--Resume,
+.Main__Right__Projects--Details--Description--Technology,
+.Main__Right__Projects--Details--Description--Access {
+  font-size: var(--Text);
+  color: var(--Gray);
+}
+.Main__Right__Projects--Details--Description--Links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.Main__Right__Projects--Details--Description--Links--Buttons {
+  padding: 10px 20px;
+  font-size: var(--Text);
+  background: var(--GradientHover);
+  background-size: auto 1000%;
+  background-position: 0 100%;
+  color: var(--White);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  transition: 0.5s ease-in-out all;
+}
+.Main__Right__Projects--Details--Description--Links--Buttons ion-icon {
+  font-size: calc(var(--Icons) + 0.5rem);
+  color: var(--White);
+}
+.Main__Right__Projects--Details--Description--Links--Buttons:hover {
+  background-position: 0 0;
+}

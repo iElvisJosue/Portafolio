@@ -1,0 +1,178 @@
+---
+import Divisor from "./Divisor.astro";
+
+import { Image } from "astro:assets";
+
+import { projects } from "../const.astro";
+
+import "../styles/Projects.css";
+---
+
+<section class="Main__Right__Projects" id="Projects">
+  <Divisor iconDivisor="briefcase" TextDivisor="PROYECTOS" />
+  <p class="Main__Right__Projects--Title">
+    <b>Proyectos</b> Realizados
+  </p>
+  {
+    projects.map(
+      ({
+        id,
+        img,
+        alt,
+        title,
+        description,
+        technologies,
+        access,
+        codigo,
+        demo,
+      }) => (
+        <div class="Main__Right__Projects--Details" id={id}>
+          <div class="Main__Right__Projects--Details--Picture">
+            <Image
+              src={img}
+              class="Main__Right__Projects--Details--Picture--Image"
+              alt={alt}
+            />
+          </div>
+          <div class="Main__Right__Projects--Details--Description">
+            <p class="Main__Right__Projects--Details--Description--Title">
+              {title}
+            </p>
+            <p class="Main__Right__Projects--Details--Description--Resume">
+              {description}
+            </p>
+            <p class="Main__Right__Projects--Details--Description--Technology">
+              Tecnologías: {technologies}
+            </p>
+            {access && (
+              <p class="Main__Right__Projects--Details--Description--Access">
+                Datos de acesso: {access}
+              </p>
+            )}
+            <span class="Main__Right__Projects--Details--Description--Links">
+              {codigo && (
+                <a
+                  href={codigo}
+                  class="Main__Right__Projects--Details--Description--Links--Buttons"
+                  target="_blank"
+                >
+                  Código <ion-icon name="logo-github" />
+                </a>
+              )}
+              {demo && (
+                <a
+                  href={demo}
+                  class="Main__Right__Projects--Details--Description--Links--Buttons"
+                  target="_blank"
+                >
+                  Web <ion-icon name="globe-outline" />
+                </a>
+              )}
+            </span>
+          </div>
+        </div>
+      )
+    )
+  }
+</section>
+
+<!-- <script>
+  <button class="Main__Right__Projects--Details--Picture--Prev">
+    <ion-icon name="chevron-back" />
+  </button>
+  <button class="Main__Right__Projects--Details--Picture--Next">
+    <ion-icon name="chevron-forward" />
+  </button>
+  let position = [0, 0, 0, 0, 0];
+  export const projectsImages = {
+    ConsultorES: {
+      images: [
+        "/Projects/Consultor-ES/1.png",
+        "../../public/Projects/Consultor-ES/2.png",
+        "/public/Projects/Consultor-ES/3.png",
+      ],
+    },
+    elecShop: {
+      images: [
+        "../public/Projects/ElecShop/1.png",
+        "/Projects/ElecShop/2.png",
+        "/Projects/ElecShop/3.png",
+        "/Projects/ElecShop/4.png",
+        "/Projects/ElecShop/5.png",
+        "/Projects/ElecShop/6.png",
+        "/Projects/ElecShop/7.png",
+        "/Projects/ElecShop/8.png",
+      ],
+    },
+    regiduria: {
+      images: [
+        "/Projects/Regiduria/1.png",
+        "/Projects/Regiduria/2.png",
+        "/Projects/Regiduria/3.png",
+        "/Projects/Regiduria/4.png",
+        "/Projects/Regiduria/5.png",
+        "/Projects/Regiduria/6.png",
+        "/Projects/Regiduria/7.png",
+        "/Projects/Regiduria/8.png",
+        "/Projects/Regiduria/9.png",
+      ],
+    },
+    QTSDM: {
+      images: [
+        "/Projects/QTSDM/1.png",
+        "/Projects/QTSDM/2.png",
+        "/Projects/QTSDM/3.png",
+        "/Projects/QTSDM/4.png",
+        "/Projects/QTSDM/5.png",
+        "/Projects/QTSDM/6.png",
+        "/Projects/QTSDM/7.png",
+        "/Projects/QTSDM/8.png",
+        "/Projects/QTSDM/9.png",
+      ],
+    },
+    Qatz: {
+      images: [
+        "/Projects/Qatz/1.png",
+        "/Projects/Qatz/2.png",
+        "/Projects/Qatz/3.png",
+        "/Projects/Qatz/4.png",
+        "/Projects/Qatz/5.png",
+        "/Projects/Qatz/6.png",
+        "/Projects/Qatz/7.png",
+        "/Projects/Qatz/8.png",
+        "/Projects/Qatz/9.png",
+      ],
+    },
+  };
+
+  const currentProject = document.querySelectorAll(
+    ".Main__Right__Projects--Details"
+  );
+  const currentImage = document.querySelectorAll(
+    ".Main__Right__Projects--Details--Picture--Image"
+  );
+  const prevButton = document.querySelectorAll(
+    ".Main__Right__Projects--Details--Picture--Prev"
+  );
+  const nextButton = document.querySelectorAll(
+    ".Main__Right__Projects--Details--Picture--Next"
+  );
+
+  currentProject.forEach(({ id }, index) => {
+    const amountImages = projectsImages[id].images.length - 1;
+    const seeImage = projectsImages[id]?.images;
+
+    currentImage[index].src = seeImage[0];
+
+    prevButton[index].addEventListener("click", () => {
+      position[index] =
+        position[index] > 0 ? position[index] - 1 : amountImages;
+      currentImage[index].src = seeImage[position[index]];
+    });
+    nextButton[index].addEventListener("click", () => {
+      position[index] =
+        position[index] < amountImages ? position[index] + 1 : 0;
+      currentImage[index].src = seeImage[position[index]];
+    });
+  });
+</script> -->

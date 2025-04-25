@@ -1,0 +1,138 @@
+.Main__Left__Card {
+  width: 100%;
+  background: var(--Black);
+  border: 1px solid var(--Transparent);
+  border-radius: 3rem;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.Main__Left__Card.Secondary {
+  display: none;
+}
+.Main__Left__Card--Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--SubTitle);
+}
+.Main__Left__Card--Title ion-icon {
+  font-size: var(--MiniText);
+  color: var(--MainColor);
+}
+.Main__Left__Card--Picture {
+  width: 30rem;
+  height: 25rem;
+  margin: auto;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Main__Left__Card--Picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3rem;
+  filter: grayscale(1);
+}
+.Main__Left__Card--Text {
+  font-size: var(--Text);
+  text-align: center;
+}
+.Main__Left__Card--Text b {
+  font-size: var(--Text);
+  color: var(--MainColor);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Left__Card--Copyright {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--Gray);
+}
+.Main__Left__Card--Networks {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.Main__Left__Card--Networks--List {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--Transparent);
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+  transition: 0.5s ease-in-out all;
+}
+.Main__Left__Card--Networks--List a {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+}
+.Main__Left__Card--Networks--List a ion-icon {
+  font-size: var(--Icons);
+  color: var(--Gray);
+
+  transition: 0.5s ease-in-out all;
+}
+.Main__Left__Card--Networks--List:hover {
+  border: 2px solid var(--MainColor);
+}
+.Main__Left__Card--Networks--List:hover a ion-icon {
+  color: var(--MainColor);
+  transform: scale(1.2);
+}
+.Main__Left__Card--Button {
+  height: 4.5rem;
+  font-size: var(--MiniText);
+  background: var(--GradientHover);
+  background-size: auto 1000%;
+  background-position: 0 100%;
+  border: none;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  transition: 0.5s ease-in-out all;
+}
+.Main__Left__Card--Button ion-icon {
+  font-size: var(--Icons);
+}
+.Main__Left__Card--Button:hover {
+  cursor: pointer;
+  background-position: 0 0;
+}
+
+@media (width <= 1200px) {
+  .Main__Left__Card.Secondary {
+    display: flex;
+  }
+}
+@media (width <= 500px) {
+  .Main__Left__Card--Picture {
+    width: 100%;
+    height: 300px;
+  }
+}

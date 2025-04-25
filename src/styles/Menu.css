@@ -1,0 +1,49 @@
+.Main__Menu {
+  position: fixed;
+  height: 5rem;
+
+  right: 0;
+  top: calc(50% - 2.5rem);
+  border: 1px solid var(--Transparent);
+  background-color: var(--Black);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  transition: 0.5s ease-in-out all;
+}
+.Main__Menu a {
+  cursor: pointer;
+}
+.Main__Menu.Show {
+  height: 40rem;
+  top: calc(50% - 20rem);
+  border-radius: 5rem;
+  right: 1.5rem;
+}
+.Main__Menu--Options {
+  min-width: 5rem;
+  min-height: 5rem;
+
+  display: grid;
+  place-content: center;
+}
+.Main__Menu--Options ion-icon {
+  opacity: 0;
+  font-size: var(--Icons);
+  color: var(--Gray);
+  transition: 0.5s ease-in-out all;
+}
+.Main__Menu--Options:first-child ion-icon {
+  opacity: 1;
+}
+.Main__Menu--Options:hover ion-icon {
+  color: var(--MainColor);
+  transform: scale(1.2);
+}
+.Main__Menu.Show ion-icon {
+  opacity: 1;
+}

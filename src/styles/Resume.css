@@ -1,0 +1,69 @@
+.Main__Right__Experience {
+  height: auto;
+  background: var(--Black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.Main__Right__Experience--Title {
+  font-size: var(--Title);
+}
+.Main__Right__Experience--Title b {
+  color: var(--MainColor);
+  font-size: var(--Title);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Right__Experience--Details {
+  border-left: 1px solid var(--Transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 0 5rem;
+}
+.Main__Right__Experience--Details--Content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.Main__Right__Experience--Details--Content span {
+  position: absolute;
+  top: 0;
+  left: -5.8rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--Gray);
+  transition: 0.3s ease-in-out all;
+}
+.Main__Right__Experience--Details--Content--Date {
+  font-size: var(--Text);
+  color: var(--Gray);
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out all;
+}
+.Main__Right__Experience--Details--Content--Name {
+  width: 100%;
+  font-size: var(--SubTitle);
+}
+.Main__Right__Experience--Details--Content--Company {
+  font-size: var(--MiniText);
+  color: var(--Gray);
+}
+.Main__Right__Experience--Details--Content:hover
+  .Main__Right__Experience--Details--Content--Date {
+  color: var(--MainColor);
+}
+.Main__Right__Experience--Details--Content:hover span {
+  background: var(--MainColor);
+}

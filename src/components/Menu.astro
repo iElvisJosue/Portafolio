@@ -1,0 +1,73 @@
+---
+import "../styles/Menu.css";
+
+const menuSections = [
+  {
+    url: "#",
+    id: "showMenuSections",
+    nameIcon: "grid",
+    idIcon: "iconMenuSections",
+  },
+  {
+    url: "#Introduction",
+    nameIcon: "Home",
+  },
+  {
+    url: "#About",
+    nameIcon: "Person",
+  },
+  {
+    url: "#Experience",
+    nameIcon: "School",
+  },
+  {
+    url: "#Projects",
+    nameIcon: "briefcase",
+  },
+  {
+    url: "#Abilities",
+    nameIcon: "hammer",
+  },
+  {
+    url: "#Skills",
+    nameIcon: "logo-javascript",
+  },
+  {
+    url: "#Contact",
+    nameIcon: "mail",
+  },
+];
+---
+
+<nav class="Main__Menu">
+  {
+    menuSections.map(({ url, id, nameIcon, idIcon }, index) =>
+      index === 0 ? (
+        <a class="Main__Menu--Options" id={id}>
+          <ion-icon name={nameIcon} id={idIcon} />
+        </a>
+      ) : (
+        <a href={url} class="Main__Menu--Options">
+          <ion-icon name={nameIcon} />
+        </a>
+      )
+    )
+  }
+</nav>
+
+<script>
+  let i = 0;
+  const menu = document.querySelector(".Main__Menu");
+  const showMenuSectionsButton = document.querySelector("#showMenuSections");
+  const iconShowMenuSections = document.querySelector("#iconMenuSections");
+  showMenuSectionsButton?.addEventListener("click", () => {
+    menu?.classList.toggle("Show");
+    if (i === 0) {
+      iconShowMenuSections?.setAttribute("name", "close-circle");
+      i++;
+    } else {
+      iconShowMenuSections?.setAttribute("name", "grid");
+      i--;
+    }
+  });
+</script>

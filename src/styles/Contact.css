@@ -1,0 +1,71 @@
+.Main__Right__Contact {
+  background: var(--Black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.Main__Right__Contact--Title {
+  font-size: var(--Title);
+}
+.Main__Right__Contact--Title b {
+  color: var(--MainColor);
+  font-size: var(--Title);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecondaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecondaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Main__Right__Contact--Information {
+  display: flex;
+}
+.Main__Right__Contact--Information--Section {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.Main__Right__Contact--Information--Section ion-icon {
+  font-size: var(--Title);
+  background: var(--Gradient);
+  color: var(--White);
+  padding: 2rem;
+  border-radius: 50%;
+}
+.Main__Right__Contact--Information--Section--Details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Main__Right__Contact--Information--Section--Details--Title {
+  font-size: var(--SubTitle);
+}
+.Main__Right__Contact--Information--Section--Details--Name {
+  font-size: var(--Text);
+  color: var(--Gray);
+  transition: 0.3s ease-in-out all;
+}
+.Main__Right__Contact--Information--Section--Details--Name:hover {
+  cursor: pointer;
+  color: var(--MainColor);
+}
+
+@media (width <= 740px) {
+  .Main__Right__Contact--Information--Section {
+    width: 100%;
+  }
+  .Main__Right__Contact--Information {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+}

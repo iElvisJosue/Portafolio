@@ -1,0 +1,52 @@
+---
+import Card from "../components/Card.astro";
+import Introduction from "../components/Introduction.astro";
+import About from "../components/About.astro";
+import Resume from "../components/Resume.astro";
+import Projects from "../components/Projects.astro";
+import Abilities from "../components/Abilities.astro";
+import Skills from "../components/Skills.astro";
+import Contact from "../components/Contact.astro";
+import Menu from "../components/Menu.astro";
+import iconWebsite from "/public/LogoWeb.ico";
+
+import "../styles/index.css";
+import "../styles/MainLeft.css";
+import "../styles/MainRight.css";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elvis Josué | Desarrollador Web</title>
+    <link rel="shortcut icon" href={iconWebsite} />
+  </head>
+  <body>
+    <main class="Main">
+      <div class="Main__Left">
+        <Card isSecondary={false} />
+      </div>
+      <div class="Main__Right">
+        <Card isSecondary={true} />
+        <Introduction />
+        <About />
+        <Resume />
+        <Projects />
+        <Abilities />
+        <Skills />
+        <Contact />
+      </div>
+      <Menu />
+    </main>
+    <!-- Import Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

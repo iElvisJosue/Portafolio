@@ -1,0 +1,14 @@
+.Main__Left {
+  width: 440px;
+  min-height: 100vh;
+  padding: 0 3rem;
+
+  display: flex;
+  align-items: center;
+}
+
+@media (width <= 1200px) {
+  .Main__Left {
+    display: none;
+  }
+}

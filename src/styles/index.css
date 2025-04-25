@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "LexendDeca";
+  src: url("/public/Files/LexendDeca.ttf") format("truetype");
+}
+
+/* CREAMOS NUESTRAS VARIABLES */
+:root {
+  --General: 10px;
+  --SuperTitle: 6rem;
+  --Title: 4rem;
+  --SubTitle: 3rem;
+  --Text: 2rem;
+  --Icons: 2rem;
+  --MiniText: 1.5rem;
+  --MainColor: #2ae98d;
+  --SecondaryColor: #009efd;
+  --HoverColor1: #6f86d6;
+  --HoverColor2: #48c6ef;
+  --Black: #1f1f1f;
+  --Gray: #979797;
+  --Transparent: #333333;
+  --White: #ffffff;
+  --Gradient: linear-gradient(45deg, var(--MainColor), var(--SecondaryColor));
+  --GradientHover: linear-gradient(
+    45deg,
+    var(--MainColor),
+    var(--SecondaryColor),
+    var(--HoverColor1),
+    var(--HoverColor2)
+  );
+}
+/* ASIGNAMOS ESTILOS GENERALES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LexendDeca", sans-serif;
+  font-size: var(--General);
+  color: var(--White);
+}
+/* OCULTAMOS LA BARRA DE SCROLL */
+::-webkit-scrollbar {
+  display: none;
+}
+/* ASIGNAMOS UN COLO AL BODY */
+body {
+  background: var(--Black);
+}
+body.Light {
+  --Black: #ffffff;
+  --White: #000000;
+  --Transparent: #f1f1f1;
+}
+/* ASIGNAMOS PROPIEDADES A TODOS LOS ELEMENTOS a */
+a {
+  text-decoration: none;
+}
+/* ASIGNAMOS PROPIEDADES AL CONTENT */
+.Main {
+  position: relative;
+  width: 160rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+@media (width <= 1440px) {
+  .Main {
+    width: 100%;
+  }
+}
+@media (width <= 500px) {
+  :root {
+    --General: 8.5px;
+  }
+}
+@media (width <= 350px) {
+  :root {
+    --General: 8px;
+  }
+}
